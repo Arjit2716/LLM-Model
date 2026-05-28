@@ -8,7 +8,7 @@ if not api_key:
     raise SystemExit("Missing GOOGLE_API_KEY environment variable.")
 
 # Create client
-client = genai.Client(api_key="AIzaSyAAaGchVbqezJBdTEoJyQqFRTmSgrJXc8w")
+client = genai.Client(api_key=api_key)
 
 text = "Hey, are you down to grab some pizza later? I'm starving!"
 

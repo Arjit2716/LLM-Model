@@ -9,7 +9,7 @@ api_key = os.environ.get("GOOGLE_API_KEY")
 if not api_key:
     raise SystemExit("Missing GOOGLE_API_KEY environment variable.")
 
-client = genai.Client(api_key="AIzaSyAAaGchVbqezJBdTEoJyQqFRTmSgrJXc8w")
+client = genai.Client(api_key=api_key)
 
 History = []
 
