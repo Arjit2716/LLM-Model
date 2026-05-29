@@ -150,7 +150,6 @@ def main():
             function_result = call_function(function_call)
             print(f"Function result: {function_result}")
 
-            history.append(types.Content(role="assistant", parts=[first_part]))
             history.append(
                 types.Content(
                     role="function",
